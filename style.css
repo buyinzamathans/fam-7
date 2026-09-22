@@ -29,11 +29,17 @@ button{font:inherit}
   display:flex;align-items:center;justify-content:space-between;padding:0 5%;
   position:sticky;top:0;z-index:50;border-bottom:1px solid #eeeae0;
 }
-.logo{display:flex;align-items:center}
+.logo{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
 .header-logo-img{
-  height:52px;
-  width:auto;
-  object-fit:contain;
+  height:48px !important;
+  width:auto !important;
+  max-width:180px !important;
+  object-fit:contain !important;
+  display:block;
 }
 
 .desktop-nav{display:flex;gap:34px;margin-left:auto;margin-right:35px}
@@ -85,7 +91,7 @@ button{font:inherit}
 .feature-card h2{font-size:47px;color:var(--green);margin:17px 0}
 .feature-card p{color:#52645b;line-height:1.5;margin-bottom:22px}
 .feature-card>img{position:absolute;right:0;top:0;height:100%;width:55%;object-position:center}
-.pill{display:inline-block;padding:99px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px}
+.pill{display:inline-block;padding:9px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px}
 .pill.pink{background:var(--pink);color:#fff}
 .pill.green{background:var(--green);color:#fff}
 .outline-btn{border:1px solid var(--green);color:var(--green);padding:12px 18px}
@@ -107,9 +113,10 @@ button{font:inherit}
 }
 .banner-logo{border-right:1px solid #b8c9ba;padding-right:20px;display:flex;align-items:center}
 .banner-logo-img{
-  height:75px;
-  width:auto;
-  object-fit:contain;
+  height:65px !important;
+  width:auto !important;
+  max-width:160px !important;
+  object-fit:contain !important;
 }
 .booking-banner h2{font-size:43px;color:var(--green)}
 .booking-banner p{color:#52645b;margin-top:10px}
@@ -120,9 +127,10 @@ footer{background:var(--deep);color:#e8f4eb;padding:45px 5%;display:grid;grid-te
 footer strong{font-size:15px}
 footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
 .footer-logo-img{
-  height:42px;
-  width:auto;
-  object-fit:contain;
+  height:40px !important;
+  width:auto !important;
+  max-width:140px !important;
+  object-fit:contain !important;
   margin-bottom:8px;
 }
 
@@ -136,7 +144,7 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
 /* Media Queries */
 @media(max-width:900px){
   .site-header{height:72px;padding:0 20px}
-  .header-logo-img{height:44px}
+  .header-logo-img{height:38px !important;max-width:140px !important}
   .desktop-nav,.book-btn{display:none}
   .header-actions{margin-left:auto}
   .menu-btn{display:block}
@@ -170,14 +178,14 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .section-heading h2{font-size:42px}
   .booking-banner{margin:10px 20px 55px;padding:30px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
   .banner-logo{border:0;padding-right:0}
-  .banner-logo-img{height:60px}
+  .banner-logo-img{height:50px !important;max-width:130px !important}
   .booking-banner h2{font-size:38px}
   .whatsapp-btn{align-self:stretch}
   footer{grid-template-columns:1fr 1fr;padding:38px 20px}
 }
 
 @media(max-width:480px){
-  .header-logo-img{height:38px}
+  .header-logo-img{height:32px !important;max-width:120px !important}
   .icon-btn{font-size:22px}
   .hero h1{font-size:47px}
   .hero-visual{min-height:455px}
@@ -188,7 +196,7 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .feature-card h2{font-size:34px}
   .feature-card p{font-size:13px}
   .category-grid{grid-template-columns:repeat(2,1fr)}
-  .banner-logo-img{height:50px}
-  .footer-logo-img{height:36px}
+  .banner-logo-img{height:45px !important;max-width:110px !important}
+  .footer-logo-img{height:32px !important;max-width:110px !important}
   footer{grid-template-columns:1fr}
 }
