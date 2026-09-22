@@ -23,15 +23,19 @@ img{display:block;width:100%;object-fit:cover}
 a{text-decoration:none;color:inherit}
 button{font:inherit}
 
+/* Header Styles */
 .site-header{
   height:82px;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);
   display:flex;align-items:center;justify-content:space-between;padding:0 5%;
   position:sticky;top:0;z-index:50;border-bottom:1px solid #eeeae0;
 }
-.logo{display:flex;flex-direction:column;line-height:.8}
-.logo-main{font-size:35px;font-weight:800;letter-spacing:-2px;color:var(--pink);font-style:italic}
-.logo-main span{color:var(--green)}
-.logo small{font-size:9px;letter-spacing:5px;color:var(--green);font-weight:700;margin:9px 0 0 10px}
+.logo{display:flex;align-items:center}
+.header-logo-img{
+  height:52px;
+  width:auto;
+  object-fit:contain;
+}
+
 .desktop-nav{display:flex;gap:34px;margin-left:auto;margin-right:35px}
 .desktop-nav a{font-size:14px;font-weight:600;padding:31px 0;border-bottom:2px solid transparent}
 .desktop-nav a:hover,.desktop-nav a.active{border-color:var(--green);color:var(--green)}
@@ -46,6 +50,7 @@ button{font:inherit}
 .primary-btn:hover,.book-btn:hover,.dark-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
 .menu-btn,.mobile-nav{display:none}
 
+/* Hero Section */
 .hero{
   min-height:690px;display:grid;grid-template-columns:1fr 1fr;
   background:#f4f4e9;position:relative;overflow:hidden;
@@ -70,6 +75,7 @@ button{font:inherit}
 .hero-products img{height:145px;width:32%;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.18))}
 .hero-script{position:absolute;right:5%;top:28%;z-index:4;color:#fff;font-family:"Playfair Display",serif;font-style:italic;font-size:31px;transform:rotate(-8deg);text-shadow:0 2px 8px #355}
 
+/* Features & Sections */
 .section{padding:75px 5%}
 .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .feature-card{min-height:390px;border-radius:var(--radius);overflow:hidden;display:flex;position:relative;padding:45px}
@@ -79,7 +85,7 @@ button{font:inherit}
 .feature-card h2{font-size:47px;color:var(--green);margin:17px 0}
 .feature-card p{color:#52645b;line-height:1.5;margin-bottom:22px}
 .feature-card>img{position:absolute;right:0;top:0;height:100%;width:55%;object-position:center}
-.pill{display:inline-block;padding:9px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px}
+.pill{display:inline-block;padding:99px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px}
 .pill.pink{background:var(--pink);color:#fff}
 .pill.green{background:var(--green);color:#fff}
 .outline-btn{border:1px solid var(--green);color:var(--green);padding:12px 18px}
@@ -94,27 +100,43 @@ button{font:inherit}
 .category-card b{font-size:17px;color:var(--pink)}
 .category-card:hover{transform:translateY(-7px)}
 
+/* Booking Banner */
 .booking-banner{
   margin:20px 5% 80px;border-radius:var(--radius);padding:45px 5%;
   background:linear-gradient(105deg,#dcefd0,#f8eee8);display:grid;grid-template-columns:.8fr 1.3fr 1fr;align-items:center;gap:30px;
 }
-.banner-logo{border-right:1px solid #b8c9ba}
+.banner-logo{border-right:1px solid #b8c9ba;padding-right:20px;display:flex;align-items:center}
+.banner-logo-img{
+  height:75px;
+  width:auto;
+  object-fit:contain;
+}
 .booking-banner h2{font-size:43px;color:var(--green)}
 .booking-banner p{color:#52645b;margin-top:10px}
 .whatsapp-btn{background:#fff;color:var(--green);justify-self:end;padding:17px 25px}
 
+/* Footer */
 footer{background:var(--deep);color:#e8f4eb;padding:45px 5%;display:grid;grid-template-columns:1.4fr 1fr 1.5fr 1fr;gap:30px}
 footer strong{font-size:15px}
 footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
+.footer-logo-img{
+  height:42px;
+  width:auto;
+  object-fit:contain;
+  margin-bottom:8px;
+}
 
+/* UI Elements */
 .toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);background:#14251e;color:#fff;padding:13px 20px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.3s;z-index:100}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
 
+/* Media Queries */
 @media(max-width:900px){
   .site-header{height:72px;padding:0 20px}
+  .header-logo-img{height:44px}
   .desktop-nav,.book-btn{display:none}
   .header-actions{margin-left:auto}
   .menu-btn{display:block}
@@ -147,15 +169,15 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .category-grid{grid-template-columns:repeat(3,1fr);gap:25px 12px}
   .section-heading h2{font-size:42px}
   .booking-banner{margin:10px 20px 55px;padding:30px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
-  .banner-logo{border:0}
+  .banner-logo{border:0;padding-right:0}
+  .banner-logo-img{height:60px}
   .booking-banner h2{font-size:38px}
   .whatsapp-btn{align-self:stretch}
   footer{grid-template-columns:1fr 1fr;padding:38px 20px}
 }
 
 @media(max-width:480px){
-  .logo-main{font-size:30px}
-  .logo small{font-size:7px;letter-spacing:4px}
+  .header-logo-img{height:38px}
   .icon-btn{font-size:22px}
   .hero h1{font-size:47px}
   .hero-visual{min-height:455px}
@@ -166,5 +188,7 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .feature-card h2{font-size:34px}
   .feature-card p{font-size:13px}
   .category-grid{grid-template-columns:repeat(2,1fr)}
+  .banner-logo-img{height:50px}
+  .footer-logo-img{height:36px}
   footer{grid-template-columns:1fr}
 }
