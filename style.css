@@ -25,7 +25,7 @@ button{font:inherit}
 
 /* Header Styles */
 .site-header{
-  height:82px;
+  height:94px;
   background:rgba(255,255,255,.94);
   backdrop-filter:blur(16px);
   display:flex;
@@ -43,9 +43,9 @@ button{font:inherit}
   flex-shrink:0;
 }
 .header-logo-img{
-  height:42px !important;
+  height:60px !important;
   width:auto !important;
-  max-width:180px !important;
+  max-width:230px !important;
   object-fit:contain !important;
   display:block;
 }
@@ -127,9 +127,9 @@ button{font:inherit}
   align-items:flex-start;
 }
 .banner-logo-img{
-  height:52px !important;
+  height:76px !important;
   width:auto !important;
-  max-width:180px !important;
+  max-width:270px !important;
   object-fit:contain !important;
 }
 .booking-banner h2{font-size:43px;color:var(--green)}
@@ -141,9 +141,9 @@ footer{background:var(--deep);color:#e8f4eb;padding:45px 5%;display:grid;grid-te
 footer strong{font-size:15px}
 footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
 .footer-logo-img{
-  height:44px !important;
+  height:62px !important;
   width:auto !important;
-  max-width:160px !important;
+  max-width:220px !important;
   object-fit:contain !important;
   margin-bottom:12px;
   filter: brightness(0) invert(1) !important;
@@ -158,13 +158,13 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
 
 /* Media Queries */
 @media(max-width:900px){
-  .site-header{height:76px;padding:0 18px}
-  .header-logo-img{height:36px !important;max-width:140px !important}
+  .site-header{height:84px;padding:0 18px}
+  .header-logo-img{height:52px !important;max-width:190px !important}
   .desktop-nav,.book-btn{display:none}
   .header-actions{margin-left:auto}
   .menu-btn{display:block}
   .mobile-nav{
-    display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;
+    display:flex;position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;
     padding:12px 22px 22px;box-shadow:0 20px 35px rgba(0,0,0,.10);
     transform:translateY(-120%);transition:.3s;z-index:-1;
   }
@@ -193,14 +193,14 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .section-heading h2{font-size:42px}
   .booking-banner{margin:10px 20px 55px;padding:32px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
   .banner-logo{border:0;padding-right:0;margin-bottom:4px}
-  .banner-logo-img{height:42px !important;max-width:140px !important}
+  .banner-logo-img{height:58px !important;max-width:200px !important}
   .booking-banner h2{font-size:38px}
   .whatsapp-btn{align-self:stretch}
   footer{grid-template-columns:1fr 1fr;padding:38px 20px}
 }
 
 @media(max-width:480px){
-  .header-logo-img{height:32px !important;max-width:120px !important}
+  .header-logo-img{height:46px !important;max-width:170px !important}
   .icon-btn{font-size:22px}
   .hero h1{font-size:47px}
   .hero-visual{min-height:455px}
@@ -211,7 +211,7 @@ footer p{font-size:13px;opacity:.78;margin-top:9px;line-height:1.5}
   .feature-card h2{font-size:34px}
   .feature-card p{font-size:13px}
   .category-grid{grid-template-columns:repeat(2,1fr)}
-  .banner-logo-img{height:38px !important;max-width:130px !important}
-  .footer-logo-img{height:36px !important;max-width:130px !important}
+  .banner-logo-img{height:52px !important;max-width:180px !important}
+  .footer-logo-img{height:48px !important;max-width:170px !important}
   footer{grid-template-columns:1fr}
 }
