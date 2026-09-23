@@ -72,7 +72,7 @@ button{font:inherit}
 .hero-copy{padding:90px 8% 70px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
 .eyebrow{font-size:12px;letter-spacing:3px;color:var(--green);font-weight:700;margin-bottom:18px}
 .hero h1,.section-heading h2,.feature-card h2,.booking-banner h2{
-  font-family:"Playfair Display",serif;line-height:.96;letter-spacing:-2px;
+  font-family:"Poppins",sans-serif;font-weight:800;line-height:.94;letter-spacing:-1px;
 }
 .hero h1{font-size:72px;color:var(--green)}
 .hero h1 em,.section-heading em,.booking-banner em{color:var(--pink);font-style:normal}
@@ -87,7 +87,7 @@ button{font:inherit}
 .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(244,244,233,.25),transparent 45%)}
 .hero-products{position:absolute;z-index:3;bottom:25px;right:5%;display:flex;align-items:end;gap:5px;width:48%}
 .hero-products img{height:145px;width:32%;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.18))}
-.hero-script{position:absolute;right:5%;top:28%;z-index:4;color:#fff;font-family:"Playfair Display",serif;font-style:italic;font-size:31px;transform:rotate(-8deg);text-shadow:0 2px 8px #355}
+.hero-script{position:absolute;right:5%;top:28%;z-index:4;color:#fff;font-family:"Poppins",sans-serif;font-weight:800;font-size:29px;transform:rotate(-8deg);text-shadow:0 2px 8px #355}
 
 /* Features & Sections */
 .section{padding:75px 5%}
