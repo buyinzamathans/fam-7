@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop Fam7 Naturals hair and skin care: treatments, butters, oils, shampoos, styling and body care. Order on WhatsApp.">
+  <meta name="theme-color" content="#075d3d">
+  <title>Products | Fam7 Naturals</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-products">
+<header class="site-header">
+  <a href="index.html" class="logo" aria-label="Fam7 Naturals home"><img src="logo.png" alt="Fam7 Naturals" class="header-logo-img" width="135" height="60"></a>
+  <nav class="desktop-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="products.html" class="active" aria-current="page">Products</a><a href="index.html#salon">Salon</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+  <div class="header-actions">
+    <a href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20book%20a%20salon%20appointment." class="btn btn-deep btn-sm book-btn" target="_blank" rel="noopener">Book Salon</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span class="i-menu"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><span class="i-close"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden><a href="index.html">Home</a><a href="products.html">Products</a><a href="index.html#salon">Salon</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><a href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20book%20a%20salon%20appointment." class="mobile-book" target="_blank" rel="noopener">Book an Appointment</a></nav>
+</header>
+<main>
+  <section class="page-banner">
+    <p class="eyebrow">FAM7 NATURALS</p>
+    <h1>Our <em>Products</em></h1>
+    <p>Natural hair and skin care, grouped so you can find the right one fast. Tap Order to chat with us on WhatsApp.</p>
+    <label class="search" for="q"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/></svg><input id="q" type="search" placeholder="Search products, e.g. shea, growth, shampoo" autocomplete="off"></label>
+  </section>
+
+  <section class="finder" id="finder">
+    <div class="finder-in">
+      <div class="finder-head">
+        <span class="pill pink">PRODUCT FINDER</span>
+        <h2>Tell us about your <em>hair or skin.</em></h2>
+        <p>Pick what applies and we will suggest Fam7 products that match.</p>
+      </div>
+      <form class="finder-form" id="finderForm" novalidate>
+        <div class="seg" role="tablist" aria-label="What are you shopping for">
+          <button type="button" class="seg-btn is-on" data-mode="hair" role="tab" aria-selected="true">Hair</button>
+          <button type="button" class="seg-btn" data-mode="skin" role="tab" aria-selected="false">Skin</button>
+        </div>
+        <div class="f-group" data-for="hair">
+          <p class="f-label">Your hair type</p>
+          <div class="opts" data-name="type">
+            <button type="button" class="opt" data-v="coily">Kinky / coily (4a–4c)</button>
+            <button type="button" class="opt" data-v="curly">Curly (3a–3c)</button>
+            <button type="button" class="opt" data-v="locs">Locs, twists or braids</button>
+            <button type="button" class="opt" data-v="relaxed">Relaxed or processed</button>
+          </div>
+          <p class="f-label">What do you want to fix? <small>Choose all that apply</small></p>
+          <div class="opts" data-name="concern">
+            <button type="button" class="opt" data-v="dryness">Dryness</button>
+            <button type="button" class="opt" data-v="breakage">Breakage / weak hair</button>
+            <button type="button" class="opt" data-v="growth">Slow growth / thinning</button>
+            <button type="button" class="opt" data-v="scalp">Dandruff / itchy scalp</button>
+            <button type="button" class="opt" data-v="tangles">Tangles</button>
+            <button type="button" class="opt" data-v="definition">Curl definition &amp; hold</button>
+            <button type="button" class="opt" data-v="heat">Heat damage</button>
+            <button type="button" class="opt" data-v="shine">Shine</button>
+            <button type="button" class="opt" data-v="cleanse">Wash day</button>
+          </div>
+        </div>
+        <div class="f-group" data-for="skin" hidden>
+          <p class="f-label">What does your skin need? <small>Choose all that apply</small></p>
+          <div class="opts" data-name="skin">
+            <button type="button" class="opt" data-v="dryskin">Dry skin</button>
+            <button type="button" class="opt" data-v="dullskin">Dull or uneven tone</button>
+            <button type="button" class="opt" data-v="skincleanse">Gentle everyday cleansing</button>
+          </div>
+        </div>
+        <div class="f-actions">
+          <button type="submit" class="btn btn-pink">Show my products <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button type="button" class="btn btn-ghost" id="finderReset">Clear</button>
+        </div>
+      </form>
+      <div class="finder-result" id="finderResult" hidden aria-live="polite"></div>
+    </div>
+  </section>
+
+  <nav class="cat-bar" aria-label="Product categories"><div class="cat-scroll"><a href="#hair-treatments">Hair Treatments</a><a href="#butters-balms">Butters & Balms</a><a href="#oils">Oils</a><a href="#shampoos-conditioners">Shampoos & Conditioners</a><a href="#styling-protection">Styling & Protection</a><a href="#body-skin">Body & Skin Care</a></div></nav>
+
+  <div class="p-wrap" id="catalog">
+<section class="p-section" id="hair-treatments" data-cat="hair-treatments">
+  <div class="p-head"><h2>Hair Treatments</h2><p>Repair, strengthen and restore <span class="count">5 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="deep-treatment" data-name="deep treatment an intensive strengthening treatment that penetrates deep into the hair shaft to rebuild and repair. formulated to prevent breakage and reinforce weak, damaged strands, leaving hair noticeably stronger after every wash.">
+  <div class="p-media"><img src="assets/products/deep-treatment.webp" alt="Deep Treatment" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Deep Treatment</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">An intensive strengthening treatment that penetrates deep into the hair shaft to rebuild and repair. Formulated to prevent breakage and reinforce weak, damaged strands, leaving hair noticeably stronger after every wash.</p>
+    <div class="p-foot"><span class="p-price">UGX 40,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Deep%20Treatment%20%28500ml%29%20at%20UGX%2040%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="leave-in-treatment" data-name="leave-in treatment a lightweight, no-rinse treatment that moisturises and detangles as it works, while boosting hair growth over time. perfect for daily use to keep curls and coils soft and manageable between wash days.">
+  <div class="p-media"><img src="assets/products/leave-in-treatment.webp" alt="Leave-in Treatment" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Leave-in Treatment</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">A lightweight, no-rinse treatment that moisturises and detangles as it works, while boosting hair growth over time. Perfect for daily use to keep curls and coils soft and manageable between wash days.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Leave-in%20Treatment%20%28500ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="collagen-treatment" data-name="collagen treatment a protein-rich treatment infused with vitamin e to reduce breakage and support healthy hair growth. ideal for restoring elasticity to over-processed or fragile hair.">
+  <div class="p-media"><img src="assets/products/collagen-treatment.webp" alt="Collagen Treatment" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Collagen Treatment</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">A protein-rich treatment infused with vitamin E to reduce breakage and support healthy hair growth. Ideal for restoring elasticity to over-processed or fragile hair.</p>
+    <div class="p-foot"><span class="p-price">UGX 50,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Collagen%20Treatment%20at%20UGX%2050%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="anti-dandruff-cream" data-name="anti-dandruff cream a scalp-soothing cream that targets flaking and dandruff at the source, calming irritation while restoring balance to the scalp.">
+  <div class="p-media"><img src="assets/products/anti-dandruff.webp" alt="Anti-Dandruff Cream" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Anti-Dandruff Cream</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">A scalp-soothing cream that targets flaking and dandruff at the source, calming irritation while restoring balance to the scalp.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Anti-Dandruff%20Cream%20%28250g%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="tonner" data-name="tonner a refreshing scalp toner that balances and revitalises between treatments.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>Tonner</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">A refreshing scalp toner that balances and revitalises between treatments.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Tonner%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article></div>
+</section>
+<section class="p-section" id="butters-balms" data-cat="butters-balms">
+  <div class="p-head"><h2>Butters & Balms</h2><p>Rich moisture for hair and skin <span class="count">4 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="shea-pom" data-name="shea pom a whipped hair pomade made with shea butter, coconut oil, tea tree and castor oil. soothes an itchy or irritated scalp while delivering the moisture that builds strong, vibrant, healthy-growing hair.">
+  <div class="p-media"><img src="assets/products/shea-pom.webp" alt="Shea Pom" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Shea Pom</h3>
+    <p class="p-size">200ml</p>
+    <p class="p-desc">A whipped hair pomade made with shea butter, coconut oil, tea tree and castor oil. Soothes an itchy or irritated scalp while delivering the moisture that builds strong, vibrant, healthy-growing hair.</p>
+    <div class="p-foot"><span class="p-price">UGX 15,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Shea%20Pom%20%28200ml%29%20at%20UGX%2015%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="moringa-butter" data-name="moringa butter a rich, nourishing butter infused with mango butter and rosemary essence. locks in moisture and boosts retention, leaving hair and skin soft, supple and resilient.">
+  <div class="p-media"><img src="assets/products/moringa-butter.webp" alt="Moringa Butter" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Moringa Butter</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">A rich, nourishing butter infused with mango butter and rosemary essence. Locks in moisture and boosts retention, leaving hair and skin soft, supple and resilient.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Moringa%20Butter%20%28250g%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="chebe-butter" data-name="chebe butter inspired by the traditional chadian chebe powder, this butter is all about hydration and growth, a deeply moisturising treatment that helps hair grow longer and stronger with consistent use.">
+  <div class="p-media"><img src="assets/products/chebe-butter.webp" alt="Chebe Butter" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Chebe Butter</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">Inspired by the traditional Chadian chebe powder, this butter is all about hydration and growth, a deeply moisturising treatment that helps hair grow longer and stronger with consistent use.</p>
+    <div class="p-foot"><span class="p-price">UGX 40,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Chebe%20Butter%20%28250g%29%20at%20UGX%2040%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="prop-shea" data-name="prop shea a dual-purpose shea-based moisturiser for both skin and hair. one jar that softens dry skin and conditions hair in a single step.">
+  <div class="p-media"><img src="assets/products/prop-shea.webp" alt="Prop Shea" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Prop Shea</h3>
+    <p class="p-size">250ml</p>
+    <p class="p-desc">A dual-purpose shea-based moisturiser for both skin and hair. One jar that softens dry skin and conditions hair in a single step.</p>
+    <div class="p-foot"><span class="p-price">UGX 20,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Prop%20Shea%20%28250ml%29%20at%20UGX%2020%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article></div>
+</section>
+<section class="p-section" id="oils" data-cat="oils">
+  <div class="p-head"><h2>Oils</h2><p>Seal in moisture, add shine, support growth <span class="count">3 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="kinky-oil" data-name="kinky oil a blend of coconut, avocado and olive oils crafted specifically for kinky, coily textures. adds shine and slip while sealing in moisture from root to tip.">
+  <div class="p-media"><img src="assets/products/kinky-oil.webp" alt="Kinky Oil" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Kinky Oil</h3>
+    <p class="p-size">250ml</p>
+    <p class="p-desc">A blend of coconut, avocado and olive oils crafted specifically for kinky, coily textures. Adds shine and slip while sealing in moisture from root to tip.</p>
+    <div class="p-foot"><span class="p-price">UGX 20,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Kinky%20Oil%20%28250ml%29%20at%20UGX%2020%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="virgin-coconut-oil" data-name="virgin coconut oil pure, cold-pressed coconut oil. a hair-and-skin staple for sealing moisture, adding shine and gently conditioning.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>Virgin Coconut Oil</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">Pure, cold-pressed coconut oil. A hair-and-skin staple for sealing moisture, adding shine and gently conditioning.</p>
+    <div class="p-foot"><span class="p-price">UGX 20,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Virgin%20Coconut%20Oil%20at%20UGX%2020%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="regrow-oil" data-name="regrow oil a targeted growth oil designed to stimulate the scalp and encourage new hair growth. massage into the roots to awaken dormant follicles and thicken thinning areas.">
+  <div class="p-media"><img src="assets/products/regrow-oil.webp" alt="Regrow Oil" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Regrow Oil</h3>
+    <p class="p-size">120ml</p>
+    <p class="p-desc">A targeted growth oil designed to stimulate the scalp and encourage new hair growth. Massage into the roots to awaken dormant follicles and thicken thinning areas.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Regrow%20Oil%20%28120ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article></div>
+</section>
+<section class="p-section" id="shampoos-conditioners" data-cat="shampoos-conditioners">
+  <div class="p-head"><h2>Shampoos & Conditioners</h2><p>Cleanse, condition and detangle <span class="count">4 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="moisturising-shampoo" data-name="moisturising shampoo a gentle cleansing shampoo that moisturises as it removes product buildup, leaving hair clean without stripping it of natural oils.">
+  <div class="p-media"><img src="assets/products/moisturising-shampoo.webp" alt="Moisturising Shampoo" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Moisturising Shampoo</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">A gentle cleansing shampoo that moisturises as it removes product buildup, leaving hair clean without stripping it of natural oils.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Moisturising%20Shampoo%20%28500ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="two-in-one-shampoo" data-name="2-in-1 conditioning shampoo a time-saving formula that cleanses and conditions in one step, for wash days when you need results fast without compromising on moisture.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>2-in-1 Conditioning Shampoo</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">A time-saving formula that cleanses and conditions in one step, for wash days when you need results fast without compromising on moisture.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%202-in-1%20Conditioning%20Shampoo%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="cowash-conditioner" data-name="co-wash conditioner a cleansing conditioner for the co-washing method. gently cleans while conditioning, ideal for curly and textured hair that needs extra moisture between shampoo washes.">
+  <div class="p-media"><img src="assets/products/cowash-conditioner.webp" alt="Co-wash Conditioner" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Co-wash Conditioner</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">A cleansing conditioner for the co-washing method. Gently cleans while conditioning, ideal for curly and textured hair that needs extra moisture between shampoo washes.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Co-wash%20Conditioner%20%28500ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="conditioning-detangler" data-name="conditioning detangler formulated to glide through knots and tangles, especially suited to 3c &amp; 4c textures, twists, dreadlocks and shingling. makes detangling sessions faster and far gentler on the hair.">
+  <div class="p-media"><img src="assets/products/conditioning-detangler.webp" alt="Conditioning Detangler" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Conditioning Detangler</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">Formulated to glide through knots and tangles, especially suited to 3c &amp; 4c textures, twists, dreadlocks and shingling. Makes detangling sessions faster and far gentler on the hair.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Conditioning%20Detangler%20%28500ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article></div>
+</section>
+<section class="p-section" id="styling-protection" data-cat="styling-protection">
+  <div class="p-head"><h2>Styling & Protection</h2><p>Define, hold and protect your style <span class="count">4 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="twist-gel" data-name="twist gel a styling gel built for twists, finger coils, comb coils, shingling and defining natural curls. enhances and holds all-natural protective styles while supporting healthy hair growth underneath.">
+  <div class="p-media"><img src="assets/products/twist-gel.webp" alt="Twist Gel" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Twist Gel</h3>
+    <p class="p-size">200ml</p>
+    <p class="p-desc">A styling gel built for twists, finger coils, comb coils, shingling and defining natural curls. Enhances and holds all-natural protective styles while supporting healthy hair growth underneath.</p>
+    <div class="p-foot"><span class="p-price">UGX 15,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Twist%20Gel%20%28200ml%29%20at%20UGX%2015%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="hair-spray" data-name="hair spray a moisturising spray-on mist that detangles and boosts hair growth. a refreshing, hydrating pick-me-up for hair between full wash days.">
+  <div class="p-media"><img src="assets/products/hair-spray.webp" alt="Hair Spray" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Hair Spray</h3>
+    <p class="p-size">500ml</p>
+    <p class="p-desc">A moisturising spray-on mist that detangles and boosts hair growth. A refreshing, hydrating pick-me-up for hair between full wash days.</p>
+    <div class="p-foot"><span class="p-price">UGX 30,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Hair%20Spray%20%28500ml%29%20at%20UGX%2030%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="fiber-spray" data-name="fiber spray a lightweight spray that adds texture and fiber to styles, helping definition hold throughout the day.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>Fiber Spray</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">A lightweight spray that adds texture and fiber to styles, helping definition hold throughout the day.</p>
+    <div class="p-foot"><span class="p-price">UGX 15,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Fiber%20Spray%20at%20UGX%2015%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article><article class="p-card" data-id="afro-heat-protector" data-name="afro heat protector a protective spray-on formula that shields natural hair from heat damage during blow-drying and styling, so you can style with confidence.">
+  <div class="p-media"><img src="assets/products/heat-protector.webp" alt="Afro Heat Protector" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Afro Heat Protector</h3>
+    <p class="p-size">250ml</p>
+    <p class="p-desc">A protective spray-on formula that shields natural hair from heat damage during blow-drying and styling, so you can style with confidence.</p>
+    <div class="p-foot"><span class="p-price">UGX 20,000</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Afro%20Heat%20Protector%20%28250ml%29%20at%20UGX%2020%2C000.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Order<span class="x"> on WhatsApp</span></span></a></div>
+  </div>
+</article></div>
+</section>
+<section class="p-section" id="body-skin" data-cat="body-skin">
+  <div class="p-head"><h2>Body & Skin Care</h2><p>Nourish and brighten your skin <span class="count">5 products</span></p></div>
+  <div class="p-grid"><article class="p-card" data-id="body-butter" data-name="body butter a thick, whipped body butter that deeply moisturises dry skin, leaving it soft and smooth from head to toe.">
+  <div class="p-media"><img src="assets/products/body-butter.webp" alt="Body Butter" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Body Butter</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">A thick, whipped body butter that deeply moisturises dry skin, leaving it soft and smooth from head to toe.</p>
+    <div class="p-foot"><span class="p-price ask">Ask for price</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Body%20Butter%20%28250g%29.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Ask for price</span></a></div>
+  </div>
+</article><article class="p-card" data-id="body-scrub" data-name="body scrub (sugar) an exfoliating sugar scrub that buffs away dead skin, revealing smoother, brighter skin underneath.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>Body Scrub (Sugar)</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">An exfoliating sugar scrub that buffs away dead skin, revealing smoother, brighter skin underneath.</p>
+    <div class="p-foot"><span class="p-price ask">Ask for price</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Body%20Scrub%20%28Sugar%29%20%28250g%29.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Ask for price</span></a></div>
+  </div>
+</article><article class="p-card" data-id="carrot-oil" data-name="carrot oil a vitamin-rich body oil made with real carrot extract, formulated to nourish and brighten the skin.">
+  <div class="p-media"><img src="assets/products/carrot-oil.webp" alt="Carrot Oil" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Carrot Oil</h3>
+    <p class="p-size">250ml</p>
+    <p class="p-desc">A vitamin-rich body oil made with real carrot extract, formulated to nourish and brighten the skin.</p>
+    <div class="p-foot"><span class="p-price ask">Ask for price</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Carrot%20Oil%20%28250ml%29.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Ask for price</span></a></div>
+  </div>
+</article><article class="p-card" data-id="brightening-cream" data-name="brightening cream a skin-toning cream formulated to even out and brighten the skin, applied as part of a daily routine.">
+  <div class="p-media"><img src="assets/products/brightening-cream.webp" alt="Brightening Cream" loading="lazy" width="640" height="640"></div>
+  <div class="p-body">
+    <h3>Brightening Cream</h3>
+    <p class="p-size">250g</p>
+    <p class="p-desc">A skin-toning cream formulated to even out and brighten the skin, applied as part of a daily routine.</p>
+    <div class="p-foot"><span class="p-price ask">Ask for price</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Brightening%20Cream%20%28250g%29.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Ask for price</span></a></div>
+  </div>
+</article><article class="p-card" data-id="handmade-soap" data-name="handmade soap bar a natural bar soap for gentle, everyday cleansing.">
+  <div class="p-media"><div class="ph"><img src="logo.png" alt="" width="120" height="53"><span>Photo coming soon</span></div></div>
+  <div class="p-body">
+    <h3>Handmade Soap Bar</h3>
+    <p class="p-size">&nbsp;</p>
+    <p class="p-desc">A natural bar soap for gentle, everyday cleansing.</p>
+    <div class="p-foot"><span class="p-price ask">Ask for price</span>
+    <a class="btn btn-pink btn-sm" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%3A%20Handmade%20Soap%20Bar.%20Is%20it%20available%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> <span>Ask for price</span></a></div>
+  </div>
+</article></div>
+</section>
+    <p class="no-results" id="noResults" hidden>No products match your search. Try another word, or <a href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%20some%20products." target="_blank" rel="noopener">ask us on WhatsApp</a>.</p>
+  </div>
+
+  <section class="booking-banner" id="booking">
+    <div class="banner-logo"><img src="logo.png" alt="Fam7 Naturals" class="banner-logo-img" loading="lazy" width="150" height="67"></div>
+    <div class="banner-copy">
+      <h2>Need help<br><em>choosing?</em></h2>
+      <p>Message us and we will recommend the right products for you.</p>
+    </div>
+    <a class="btn btn-white" href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%20some%20products." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> WhatsApp 0774 460 446</a>
+  </section>
+</main>
+<footer id="contact">
+  <div class="foot-brand">
+    <img src="logo.png" alt="Fam7 Naturals" class="footer-logo-img" width="110" height="49">
+    <p>Nature's way for your hair &amp; skin.</p>
+  </div>
+  <div>
+    <strong>Contact</strong>
+    <p><a href="tel:+256393248735">0393 248 735</a><br><a href="tel:+256200911154">0200 911 154</a></p>
+    <p>WhatsApp: <a href="https://wa.me/256774460446?text=Hello%20Fam7%20Naturals%2C%20I%20would%20like%20to%20order%20some%20products." target="_blank" rel="noopener">0774 460 446</a></p>
+  </div>
+  <div>
+    <strong>Visit</strong>
+    <p>Buganda College Rd, Wakiso<br>Arua Park Plaza, Rm F2 635 &amp; 636<br>Pioneer Mall, Rm P1-26</p>
+  </div>
+  <div>
+    <strong>Social</strong>
+    <p>@fam7naturals</p>
+  </div>
+</footer>
+<div class="copy">&copy; Fam7 Naturals. All rights reserved.</div>
+<script src="products-data.js"></script>
+<script src="script.js"></script>
+<script src="products.js"></script>
+</body>
+</html>
